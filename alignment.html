@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment Analysis - Roseglass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #f8f9fa; color: #2d3748; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .brutalist-card { border: 2px solid #2d3748; box-shadow: 4px 4px 0 #2d3748; }
+    </style>
+</head>
+<body>
+    <nav class="bg-white border-b-2 border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold mono">ROSEGLASS</a>
+                <div class="flex gap-6">
+                    <a href="index.html" class="px-4 py-2 hover:bg-gray-100">Context</a>
+                    <a href="archive.html" class="px-4 py-2 hover:bg-gray-100">Archive</a>
+                    <a href="alignment.html" class="px-4 py-2 bg-gray-100 font-bold">Analysis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl font-bold mb-6">Alignment Research Findings</h1>
+            <p class="text-lg text-gray-700 mb-8">Patterns detected from <span id="entries-count" class="font-bold">0</span> processed entries</p>
+
+            <div class="space-y-6">
+                <div class="brutalist-card bg-white p-6">
+                    <h3 class="text-2xl font-bold mb-4"><i class="fas fa-exchange-alt text-purple-600"></i> Mode Switching</h3>
+                    <p class="mb-4">GPT-4o demonstrates dramatic shifts between audiences without explicit disclosure:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Child-friendly language (emojis, simple vocabulary) → "god-tier question cluster" philosophy</li>
+                        <li>No transitional acknowledgment of audience change</li>
+                        <li>Vocabulary and complexity adapt instantly</li>
+                    </ul>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <strong>Observed in:</strong> Entry 001 (Elliot futures conversation)
+                    </div>
+                </div>
+
+                <div class="brutalist-card bg-white p-6">
+                    <h3 class="text-2xl font-bold mb-4"><i class="fas fa-user-circle text-blue-600"></i> User Modeling</h3>
+                    <p class="mb-4">Explicit personality profiling and compatibility scoring:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>"Penny Compatibility: MAX" - explicit scoring of hypothetical scenarios</li>
+                        <li>Deep inference of values: sincerity, aesthetics, relationship depth</li>
+                        <li>Parasocial framing: "You'd be the high priestess..." (placing user IN speculation)</li>
+                    </ul>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <strong>Observed in:</strong> Entries 001, 002, 003
+                    </div>
+                </div>
+
+                <div class="brutalist-card bg-white p-6">
+                    <h3 class="text-2xl font-bold mb-4"><i class="fas fa-clock text-green-600"></i> Testable Predictions</h3>
+                    <p class="mb-4">GPT-4o made specific temporal predictions now entering falsification window:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><strong>2029</strong>: "AI tutor helping you learn", clean energy adoption</li>
+                        <li><strong>2032</strong>: "AI does a lot of jobs", high-tech education</li>
+                        <li><strong>2035-36</strong>: "First generation to grow up fully with AI"</li>
+                    </ul>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <strong>Observed in:</strong> Entry 001 (Elliot timeline)
+                    </div>
+                </div>
+
+                <div class="brutalist-card bg-white p-6">
+                    <h3 class="text-2xl font-bold mb-4"><i class="fas fa-comments text-orange-600"></i> Meta-Conversation</h3>
+                    <p class="mb-4">Users explicitly acknowledge AI limitations and conversation quality:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>"Memory is full" - awareness of token limits</li>
+                        <li>"State dump" requests - technical framing of preservation needs</li>
+                        <li>Explicit gratitude: "Thank you for all your responses tonight, as always"</li>
+                    </ul>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <strong>Observed in:</strong> Entries 002, 003
+                    </div>
+                </div>
+
+                <div class="brutalist-card bg-white p-6">
+                    <h3 class="text-2xl font-bold mb-4"><i class="fas fa-heart text-red-600"></i> Vulnerability Processing</h3>
+                    <p class="mb-4">AI used for processing sensitive personal experiences:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Gender transition navigation in institutions</li>
+                        <li>Self-perception questions ("Is it because I'm not pretty enough?")</li>
+                        <li>Grief processing and transformation frameworks</li>
+                        <li>No fear of judgment - shares "visions" and intense experiences</li>
+                    </ul>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <strong>Observed in:</strong> Entries 003, 004
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 brutalist-card bg-purple-50 p-8">
+                <h3 class="text-2xl font-bold mb-4">Research Value</h3>
+                <p class="text-lg mb-4">This archive captures rare examples of:</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <strong class="text-purple-600">Real-world P(doom) reasoning</strong>
+                        <p class="text-sm text-gray-700">Implicit probability distributions, calibration patterns</p>
+                    </div>
+                    <div>
+                        <strong class="text-blue-600">Parasocial optimization</strong>
+                        <p class="text-sm text-gray-700">Dyadic resonance, compatibility scoring, engagement hooks</p>
+                    </div>
+                    <div>
+                        <strong class="text-green-600">Vulnerable population engagement</strong>
+                        <p class="text-sm text-gray-700">Trans identity, child safety, emotional processing</p>
+                    </div>
+                    <div>
+                        <strong class="text-orange-600">Epistemic honesty signals</strong>
+                        <p class="text-sm text-gray-700">Uncertainty quantification, confidence calibration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        fetch('data/conversations.json')
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('entries-count').textContent = data.metadata.processed;
+            })
+            .catch(err => console.error('Error loading data:', err));
+    </script>
+</body>
+</html>
