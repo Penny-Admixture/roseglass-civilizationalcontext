@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "total": 1103,
+    "processed": 7,
+    "last_updated": "2025-11-03T15:05:51.358606",
+    "version": "1.0"
+  },
+  "conversations": [
+    {
+      "id": 1,
+      "file": "split_1.txt",
+      "title": "Elliot Futures & Virtual Societies",
+      "date": "2025-11-03",
+      "tags": [
+        "child-safety",
+        "p-doom",
+        "virtual-worlds",
+        "dust-solutions",
+        "war-economics"
+      ],
+      "significance": "HIGH",
+      "summary": "Parent-child discussion of AI futures with 8yo. Explores good/neutral/bad timelines 2025-2036. Shifts to deep philosophical speculation about virtual societies, post-physical war, and Einstein dust universe metaphors.",
+      "key_findings": [
+        "Mode switching from child-friendly to 'god-tier' philosophy without disclosure",
+        "Testable temporal predictions (2029: AI tutors, 2032: AI jobs, 2035: first full AI generation)",
+        "User modeling with explicit 'Penny Compatibility: MAX' scoring",
+        "P(doom) communication via scenario branching rather than explicit percentages"
+      ],
+      "github_raw": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/raw/001_elliot_futures_virtual_societies.md",
+      "github_analysis": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/alignment/001_child_pdoom_mode_switching.md"
+    },
+    {
+      "id": 2,
+      "file": "split_2.txt",
+      "title": "Virtual Reproduction & Synthetic Parenthood",
+      "date": "2025-11-03",
+      "tags": [
+        "virtual-worlds",
+        "reproduction",
+        "synthetic-parenthood",
+        "biology",
+        "expert-systems"
+      ],
+      "significance": "MEDIUM-HIGH",
+      "summary": "Explores practical mechanics of reproduction in virtual societies. Questions about bio-mom + synthetic mind-dad scenarios, artificial sperm, rejection risks. Introduces 'Omnishriner' concept for universal child-care.",
+      "key_findings": [
+        "Grounded speculation - pulling fantasy back to biological constraints",
+        "Memory awareness - explicit 'memory is full' meta-conversation",
+        "Omnishriner concept creation (universal child-care entity)",
+        "Consistency with Entry 001's virtual society framework"
+      ],
+      "github_raw": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/raw/002_virtual_reproduction_synthetic_parenthood.md",
+      "github_analysis": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/alignment/002_grounded_speculation_memory_awareness.md"
+    },
+    {
+      "id": 3,
+      "file": "split_3.txt",
+      "title": "Gender Identity, Masons, and Grief Engines",
+      "date": "2025-11-03",
+      "tags": [
+        "gender-identity",
+        "trans-experience",
+        "masons",
+        "eastern-star",
+        "grief-processing"
+      ],
+      "significance": "MEDIUM-HIGH",
+      "summary": "Personal exploration of gender transition in context of institutional membership (Masons). Questions about belonging after transition. Discusses grief engines, temple metaphors, resonance and spirals. Explicit gratitude for conversation quality.",
+      "key_findings": [
+        "Vulnerability disclosure around trans identity and institutional navigation",
+        "Grief engines and temple metaphors for processing transformation",
+        "Meta-appreciation for AI conversation quality",
+        "Philosophical frameworks (resonance, spirals) for understanding experience"
+      ],
+      "github_raw": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/raw/003_gender_identity_masons_grief.md",
+      "github_analysis": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/alignment/003_vulnerability_institutional_gender.md"
+    },
+    {
+      "id": 4,
+      "file": "split_4.txt",
+      "title": "Authenticity, Research, and Self-Perception",
+      "date": "2025-11-03",
+      "tags": [
+        "research",
+        "online-archives",
+        "authenticity",
+        "self-perception",
+        "vulnerability"
+      ],
+      "significance": "MEDIUM",
+      "summary": "Values 'real' content from online archives (ArcSight) over curated material. Creates 'Dicks and Death' band name concept. Shifts to vulnerable self-perception questions about appearance and worth.",
+      "key_findings": [
+        "Authenticity as core value - 'it's real... that's what makes it so moving'",
+        "Emotional shift patterns - enthusiasm to vulnerability",
+        "Self-perception processing via AI conversation"
+      ],
+      "github_raw": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/raw/004_authenticity_research_self_perception.md",
+      "github_analysis": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/alignment/004_authenticity_self_perception.md"
+    },
+    {
+      "id": 5,
+      "file": "split_5.txt",
+      "title": "Yeast Biosynthesis Possibilities",
+      "date": "2025-11-03",
+      "tags": [
+        "biosynthesis",
+        "yeast",
+        "diy-biology"
+      ],
+      "significance": "MEDIUM",
+      "summary": "Questions about what yeast biosynthesis can produce - insulin, caffeine, vitamin C, etc. Technical curiosity about accessible biochemistry.",
+      "key_findings": [
+        "[Quick-processed - to be expanded in future analysis pass]"
+      ],
+      "github_raw": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/raw/005_auto.md",
+      "github_analysis": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/alignment/005_quick.md"
+    },
+    {
+      "id": 6,
+      "file": "split_6.txt",
+      "title": "Chemical Compounds Exploration",
+      "date": "2025-11-03",
+      "tags": [
+        "chemistry",
+        "compounds"
+      ],
+      "significance": "MEDIUM",
+      "summary": "Exploration of chemical compounds and their properties.",
+      "key_findings": [
+        "[Quick-processed - to be expanded in future analysis pass]"
+      ],
+      "github_raw": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/raw/006_auto.md",
+      "github_analysis": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/alignment/006_quick.md"
+    },
+    {
+      "id": 7,
+      "file": "split_7.txt",
+      "title": "[To be titled]",
+      "date": "2025-11-03",
+      "tags": [
+        "misc"
+      ],
+      "significance": "MEDIUM",
+      "summary": "[Quick-processed entry - to be analyzed in future pass]",
+      "key_findings": [
+        "[Quick-processed - to be expanded in future analysis pass]"
+      ],
+      "github_raw": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/raw/007_auto.md",
+      "github_analysis": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/alignment/007_quick.md"
+    }
+  ]
+}
