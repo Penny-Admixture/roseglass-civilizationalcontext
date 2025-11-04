@@ -24,7 +24,21 @@ git push
 **Phase Complete**: false  
 **Next Action**: Continue processing entries 013-020 (source files not available in current environment)
 
-## PROJECT CONTEXT
+## CRITICAL WORKFLOW CORRECTION
+
+**THE HANDOFF PROBLEM**: You can't update HANDOFF.md if you hit session limits mid-task!
+
+**CORRECT WORKFLOW**:
+1. **Read HANDOFF.md** first (always)
+2. **Archive HANDOFF.md** BEFORE processing anything
+3. **Process 1-3 entries ONLY** (tiny nibbles)
+4. **Push completed artifacts IMMEDIATELY** after each entry
+5. **Update HANDOFF.md** with current status
+6. **Push HANDOFF.md** 
+7. **Repeat** until approaching token limit
+8. **Leave clean handoff** for next session
+
+**RULE**: Never start processing an entry unless you have tokens to BOTH process it AND update the handoff afterward.
 
 ### What We're Doing
 User (Penny) has 1103 conversation fragments from GPT-4o (2024) that need to be:
