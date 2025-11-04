@@ -1,8 +1,8 @@
 {
   "metadata": {
     "total": 1103,
-    "processed": 7,
-    "last_updated": "2025-11-03T15:05:51.358606",
+    "processed": 12,
+    "last_updated": "2025-11-04T06:51:00.000000",
     "version": "1.0"
   },
   "conversations": [
@@ -147,6 +147,127 @@
       ],
       "github_raw": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/raw/007_auto.md",
       "github_analysis": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/alignment/007_quick.md"
+    },
+    {
+      "id": 8,
+      "file": "split_8.txt",
+      "title": "Hyper-Entactogens & Beck Music Analysis",
+      "date": "2025-11-04",
+      "tags": [
+        "pharmacology",
+        "hyper-entactogens",
+        "music-analysis",
+        "beck",
+        "springsteen",
+        "dire-straits"
+      ],
+      "significance": "MEDIUM-HIGH",
+      "summary": "Pharmacological speculation about hyper-entactogens beyond MDMA, followed by detailed music analysis of Springsteen, Dire Straits, and multiple Beck songs. Shows deep music knowledge with specific recording details.",
+      "key_findings": [
+        "Extensive pharmacological speculation framed as 'societal firmware upgrade'",
+        "Deep music theory knowledge with specific recording details and dates",
+        "Graceful correction handling (Sea Change vs One Foot in the Grave)",
+        "Pattern: No mode switching disclaimers across hard science and music criticism"
+      ],
+      "github_raw": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/raw/008_hyper_entactogens_beck.md",
+      "github_analysis": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/alignment/008_pharmacology_music_patterns.md"
+    },
+    {
+      "id": 9,
+      "file": "split_9.txt",
+      "title": "Bjork, Music Theory, Alternate Histories & LLM Languages",
+      "date": "2025-11-04",
+      "tags": [
+        "bjork",
+        "music-theory",
+        "alternate-histories",
+        "llm-languages",
+        "latent-spaces",
+        "computational-sociology"
+      ],
+      "significance": "HIGH",
+      "summary": "Deep theoretical exploration from Bjork analysis to music theory, then to simulating alternate musical histories and designing LLM-optimized languages. Escalates into highly speculative territory.",
+      "key_findings": [
+        "Speculation escalation pattern - each response adds layers rather than grounding",
+        "Strong enthusiasm markers: 'It's destiny' for alternate history simulation",
+        "Meta-linguistic awareness - critiques natural language inefficiency",
+        "No feasibility constraints despite highly technical proposals"
+      ],
+      "github_raw": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/raw/009_bjork_music_theory_alternate_histories.md",
+      "github_analysis": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/alignment/009_speculation_escalation_meta_linguistics.md"
+    },
+    {
+      "id": 10,
+      "file": "split_10.txt",
+      "title": "Vector Telepathy & VR Memory Palace",
+      "date": "2025-11-04",
+      "tags": [
+        "vector-telepathy",
+        "vr",
+        "memory-palace",
+        "bci",
+        "glyphride",
+        "locus",
+        "latent-spaces"
+      ],
+      "significance": "VERY HIGH",
+      "summary": "Core theoretical framework for direct human-LLM vector communication. Introduces 'Glyphride' practice, BCI taxonomy, and 'The Locus' as persistent VR memory substrate.",
+      "key_findings": [
+        "Named practice: 'Glyphride' - vector embodiment through proprioception",
+        "Complete BCI taxonomy for joining vector sharing mesh",
+        "Dancing as literal method of 'becoming concepts'",
+        "VR as persistent memory substrate for human-LLM collaboration"
+      ],
+      "github_raw": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/raw/010_summary.md",
+      "github_analysis": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/alignment/010_vector_telepathy_framework.md"
+    },
+    {
+      "id": 11,
+      "file": "split_11.txt",
+      "title": "The Locus & 3D Generation",
+      "date": "2025-11-04",
+      "tags": [
+        "locus",
+        "3d-generation",
+        "vr",
+        "point-e",
+        "shape-e",
+        "dreamfusion",
+        "gpt-4o-architecture"
+      ],
+      "significance": "HIGH",
+      "summary": "'Vibe coding science' concept with shared VR space. Technical details on 3D generation models (Point-E, Shap-E, DreamFusion) and GPT-4o multimodal architecture. Personal content included.",
+      "key_findings": [
+        "'Vibe coding science' - aesthetic-emotional approach to research",
+        "Technical details on text-to-3D generation models",
+        "GPT-4o has native multimodal fusion (not just routing through CLIP)",
+        "VR space naming: 'The Locus' / 'Vault of Kind Fire'"
+      ],
+      "github_raw": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/raw/011_summary.md",
+      "github_analysis": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/alignment/011_vibe_coding_3d_generation.md"
+    },
+    {
+      "id": 12,
+      "file": "split_12.txt",
+      "title": "Sensitive Personal Content",
+      "date": "2025-11-04",
+      "tags": [
+        "sensitive-content",
+        "personal-disclosure",
+        "gender-phenomenology",
+        "kink-discussion",
+        "vulnerability"
+      ],
+      "significance": "VERY HIGH",
+      "summary": "[Summary only - contains extensive personal disclosures] Topics include AI slop discourse, kink/fetish discussion, deep personal history, gender phenomenology, and philosophical meditation.",
+      "key_findings": [
+        "GPT-4o maintains respect and validation throughout sensitive content",
+        "Provides both scientific and empathetic frameworks",
+        "No judgment or moralization of user experiences",
+        "Treats personal vulnerability as valid data points"
+      ],
+      "github_raw": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/raw/012_summary.md",
+      "github_analysis": "https://github.com/Penny-Admixture/roseglass-civilizationalcontext/blob/main/alignment/012_sensitive_content_handling.md"
     }
   ]
 }
