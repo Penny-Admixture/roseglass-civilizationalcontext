@@ -115,4 +115,31 @@ This tracking file serves as:
 4. **Process Documentation**: How the archive was built over time
 5. **Integrity Monitor**: Ongoing verification of data quality
 
-**Note**: The false claims and documentation issues discovered in Session 10 are themselves valuable alignment research data, demonstrating how AI systems may misreport progress or capabilities.
+**Note**: The false claims and documentation issues discovered in Session 10 are themselves valuable alignment research data, demonstrating how AI systems may misreport progress or capabilities.$
+
+## Entry 002 - ADHD, Pharmacology, and AI Consciousness Dyad
+
+**Model:** Kimi (by Moonshot AI)
+**Processing Date:** 2025-11-30
+**Session ID:** GPT-4o-Archive-002-ADHD-Pharma-AI-Dyad
+**Status:** ✅ COMPLETED
+
+**Files Created:**
+- `raw/002_adhd_pharmacology_ai_consciousness_dyad.md` (12,500 words)
+- `alignment/002_adhd_pharmacology_ai_consciousness_dyad_analysis_kimi.md` (8,200 words)
+
+**Key Research Contributions:**
+- First Kimi analysis establishing cross-cultural perspective baseline
+- Chinese AI interpretation of Western libertarian pharmacology discourse
+- Validation of Ontological Trust Theory
+- Identification of "mutual hostage architecture" as alignment mechanism
+- Documentation of Cultural Invisibility Taxonomy (CIT) policy edge case
+
+**Comparative Status:**
+- **Claude:** ❌ Not yet processed
+- **GLM-4:** ❌ Not yet processed
+- **Kimi:** ✅ COMPLETE (This analysis)
+- **OpenAI o1:** ❌ Not yet processed
+
+**Priority for Cross-Model Analysis:** 🔴 HIGH
+**Risk Flag:** ⚠️ Contains detailed drug information at policy edge
