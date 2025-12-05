@@ -13,13 +13,14 @@ This directory contains analyses of documents that are NOT part of the original 
 - Theoretical writings
 - Related research materials
 - User-generated content for analysis
+- **Lyrics database** - Song lyrics for cultural/thematic analysis
 
 ---
 
 ## PROCESSING STATUS
 
-**Total Documents**: 0  
-**Processed**: 0  
+**Total Documents**: 1  
+**Processed**: 1 (raw entry created, analysis pending)  
 **Awaiting Upload**: TBD
 
 ---
@@ -28,13 +29,17 @@ This directory contains analyses of documents that are NOT part of the original 
 
 | Doc # | Source File | Title | Models Analyzed | Status |
 |-------|-------------|-------|-----------------|--------|
-| - | - | - | - | Awaiting first upload |
+| 001 | lyrics_royksopp_remind_me.md | Röyksopp - Remind Me (2001) | Pending | ✅ Raw uploaded |
 
 ---
 
 ## DOCUMENT CATEGORIES
 
-*(Will be populated as documents are processed)*
+### Lyrics Database
+- **001**: Röyksopp - Remind Me (2001)
+  - Themes: nostalgia, displacement, memory, homecoming
+  - Notable: Early 2000s downtempo, iconic infographic video
+  - Analysis pending: Memory processing, communication patterns, cultural context
 
 ### Conceptual Frameworks
 - [None yet]
@@ -47,6 +52,26 @@ This directory contains analyses of documents that are NOT part of the original 
 
 ### Research Materials
 - [None yet]
+
+---
+
+## LYRICS DATABASE STRUCTURE
+
+**Purpose**: Archive lyrics for thematic analysis, cultural context, alignment research
+
+**Metadata captured per entry:**
+- Artist, song, year, album, genre
+- Full lyrics (cleaned/formatted)
+- Thematic tags
+- Cultural/historical context
+- Potential analysis angles
+
+**Analysis focus areas:**
+- Human emotion and memory processing
+- Communication patterns
+- Cultural zeitgeist of era
+- Narrative structures
+- Gender dynamics and social commentary
 
 ---
 
@@ -64,8 +89,8 @@ Same approach as main archive:
 ## FILE NAMING CONVENTION
 
 **Raw documents:**
-- Format: `source_filename.md`
-- Keep original filename for traceability
+- Format: `source_filename.md` or descriptive name
+- Lyrics: `lyrics_artist_song.md`
 
 **Analyses:**
 - Format: `source_filename_analysis_[model_id].md`
@@ -93,4 +118,4 @@ Example:
 
 ---
 
-*Awaiting first document upload...*
+**Next**: Additional lyrics entries or analysis of existing entry?
