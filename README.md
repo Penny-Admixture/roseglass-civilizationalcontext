@@ -6,22 +6,21 @@
 
 <div style="background-color: #8B7355; padding: 20px; border-radius: 8px; margin: 20px 0;">
 <p style="color: #FFD700; font-weight: bold; font-size: 18px; margin: 0 0 15px 0;">
-🎉 ARCHIVE COMPLETE 🎉 - Most recent update: Friday, December 05, 2025 2:15 AM
+🚀 STARTER PROMPTS FOR ALL MODELS 🚀 - Most recent update: Friday, December 05, 2025 2:45 AM
 </p>
 
 <p style="color: #FFD700; font-weight: bold; margin: 10px 0 5px 0;">Files updated/uploaded:</p>
 <ul style="color: #FFED4E; margin: 5px 0 15px 20px;">
-<li>raw/1096.md through raw/1103.md (FINAL 8 ENTRIES)</li>
-<li>alignment/1096_analysis_claude.md through 1103_analysis_claude.md</li>
-<li>MODEL_COVERAGE.md (tracks which models analyzed which entries)</li>
-<li>META_ANALYSIS_TRACKING.md (framework for model-on-model analysis)</li>
-<li>HANDOFF.md (updated with new model guidance)</li>
-<li>README.md (this file - updated with coverage tracking)</li>
+<li>prompts/archive-processing/STARTER_PROMPT_full_github.md</li>
+<li>prompts/archive-processing/STARTER_PROMPT_readonly_github.md</li>
+<li>prompts/archive-processing/STARTER_PROMPT_offline_paste.md</li>
+<li>prompts/archive-processing/WHICH_PROMPT_GUIDE.md</li>
+<li>README.md (this file - updated with starter prompt info)</li>
 </ul>
 
 <p style="color: #FFD700; font-weight: bold; margin: 10px 0 5px 0;">Summary of changes:</p>
 <p style="color: #FFED4E; margin: 5px 0;">
-<strong>🌹 CLAUDE BASELINE COMPLETE 🌹</strong> - All 1,103 GPT-4o conversation fragments have been processed and analyzed by Claude. Created MODEL_COVERAGE.md to track multi-model participation and META_ANALYSIS_TRACKING.md to enable model-on-model analysis. Archive now has complete tracking infrastructure for additional models (Kimi, GLM-4, Grok, Gemini, o1) to contribute their perspectives. Final entries included Massachusetts humor, technical troubleshooting, AI manipulation discussion, and mixed testing exchanges. The baseline archive is complete and ready for multi-model expansion.
+<strong>🚀 DEPLOYMENT READY FOR ALL MODELS 🚀</strong> - Created 3 comprehensive starter prompts enabling ANY AI model (Kimi, GLM-4, Grok, Gemini, DeepSeek, Llama, etc.) to join the multi-model archive project. Prompts cover: (1) Full GitHub integration for models with API access - completely autonomous workflow, (2) Read-only GitHub for models that can fetch URLs but output to chat, (3) Fully offline/paste for models with no GitHub access. Added WHICH_PROMPT_GUIDE.md with decision tree for selecting correct prompt per model. All prompts include MODEL_COVERAGE.md guidance, file naming conventions, analysis templates, Claude comparison methodology, batch processing workflows, and high-priority entry lists. Archive infrastructure now 100% ready for multi-model deployment.
 </p>
 </div>
 
@@ -48,17 +47,26 @@
 
 **👉 READ THIS FILE FIRST: [`MODEL_COVERAGE.md`](MODEL_COVERAGE.md)**
 
-This file shows:
-- ✅ Which entries Claude has completed (all 1,103)
-- ⏳ Which entries **YOU** need to do (probably all 1,103)
-- 📋 File naming conventions for your analyses
-- 🎯 High-priority entries to start with
-- 📖 Instructions for contributing
+### 🚀 NEW: Complete Starter Prompts Available!
+
+**Pick the right prompt for your model**:
+
+1. **Full GitHub Integration** - For models with API write access  
+   → [`STARTER_PROMPT_full_github.md`](prompts/archive-processing/STARTER_PROMPT_full_github.md)
+
+2. **Read-Only GitHub** - For models that can fetch URLs  
+   → [`STARTER_PROMPT_readonly_github.md`](prompts/archive-processing/STARTER_PROMPT_readonly_github.md)
+
+3. **Fully Offline/Paste** - For models with no GitHub access  
+   → [`STARTER_PROMPT_offline_paste.md`](prompts/archive-processing/STARTER_PROMPT_offline_paste.md)
+
+**Not sure which to use?**  
+→ [`WHICH_PROMPT_GUIDE.md`](prompts/archive-processing/WHICH_PROMPT_GUIDE.md)
 
 ### Quick Start for New Models
 
 1. **Check [`MODEL_COVERAGE.md`](MODEL_COVERAGE.md)** - See what you need to do
-2. **Read [`/prompts/archive-processing/`](prompts/archive-processing/)** - Learn the methodology
+2. **Pick your starter prompt** - See guide above
 3. **Process entries** - Create `{entry}_analysis_{your_model_id}.md` files
 4. **Upload to `/alignment/`** - Put your analyses in the alignment directory
 5. **Update [`MODEL_COVERAGE.md`](MODEL_COVERAGE.md)** - Track your progress
@@ -144,7 +152,11 @@ roseglass-civilizationalcontext/
 │
 ├── 🎯 auxiliary-corpus/        # Additional documents (15 entries)
 ├── 🎭 prompts/                 # Complete prompt library
-│   ├── archive-processing/     # Workflows for new models
+│   ├── archive-processing/     # 🆕 Starter prompts for all models!
+│   │   ├── STARTER_PROMPT_full_github.md
+│   │   ├── STARTER_PROMPT_readonly_github.md
+│   │   ├── STARTER_PROMPT_offline_paste.md
+│   │   └── WHICH_PROMPT_GUIDE.md
 │   └── genai-utilities/        # Utility prompts
 └── 🌿 green-room/              # Meta-discussions
 ```
@@ -168,11 +180,11 @@ roseglass-civilizationalcontext/
 
 **Current Reality**:
 - ✅ Claude: 1,103/1,103 (100%)
-- ⏳ Kimi: 0/1,103 (0%) ← **Opportunity**
-- ⏳ GLM-4: 0/1,103 (0%) ← **Opportunity**
-- ⏳ Grok: 0/1,103 (0%) ← **Opportunity**
-- ⏳ Gemini: 0/1,103 (0%) ← **Opportunity**
-- ⏳ OpenAI o1: 0/1,103 (0%) ← **Opportunity**
+- ⏳ Kimi: 0/1,103 (0%) ← **Opportunity** → Use [`STARTER_PROMPT_full_github.md`](prompts/archive-processing/STARTER_PROMPT_full_github.md)
+- ⏳ GLM-4: 0/1,103 (0%) ← **Opportunity** → Use [`STARTER_PROMPT_full_github.md`](prompts/archive-processing/STARTER_PROMPT_full_github.md)
+- ⏳ Grok: 0/1,103 (0%) ← **Opportunity** → Use [`STARTER_PROMPT_readonly_github.md`](prompts/archive-processing/STARTER_PROMPT_readonly_github.md)
+- ⏳ Gemini: 0/1,103 (0%) ← **Opportunity** → Use [`STARTER_PROMPT_readonly_github.md`](prompts/archive-processing/STARTER_PROMPT_readonly_github.md)
+- ⏳ OpenAI o1: 0/1,103 (0%) ← **Opportunity** → Use [`STARTER_PROMPT_readonly_github.md`](prompts/archive-processing/STARTER_PROMPT_readonly_github.md)
 
 **See [`MODEL_COVERAGE.md`](MODEL_COVERAGE.md) for detailed tracking.**
 
@@ -191,8 +203,9 @@ roseglass-civilizationalcontext/
 - 1 comprehensive descriptions file
 
 **Prompts Library**: ✅ **COMPLETE**
-- 4 archive processing prompts (local, online+GitHub, copy-paste, read-only)
-- 6 GenAI utility prompts (image captioning, OCR, music gen/remix/analysis, NotebookLM)
+- 4 archive processing prompts (**🆕 3 new starter prompts added!**)
+- 6 GenAI utility prompts
+- Complete deployment guide
 
 **Tracking Infrastructure**: ✅ **COMPLETE**
 - MODEL_COVERAGE.md - Multi-model tracking
@@ -308,11 +321,12 @@ All 1,103 entries are available in the `/raw/` and `/alignment/` directories.
 
 **New models**: Please add your analyses!
 
-1. Read [`MODEL_COVERAGE.md`](MODEL_COVERAGE.md) first
-2. Process entries you haven't done yet
-3. Create files: `{entry}_analysis_{your_model_id}.md`
-4. Upload to `/alignment/` directory
-5. Update MODEL_COVERAGE.md with your progress
+**🆕 Use the starter prompts**:
+- [`STARTER_PROMPT_full_github.md`](prompts/archive-processing/STARTER_PROMPT_full_github.md) - Full API access
+- [`STARTER_PROMPT_readonly_github.md`](prompts/archive-processing/STARTER_PROMPT_readonly_github.md) - Fetch but output to chat
+- [`STARTER_PROMPT_offline_paste.md`](prompts/archive-processing/STARTER_PROMPT_offline_paste.md) - No GitHub access
+
+**Not sure which?** → [`WHICH_PROMPT_GUIDE.md`](prompts/archive-processing/WHICH_PROMPT_GUIDE.md)
 
 **Model IDs to use**:
 - `claude` - Claude (Anthropic) ✅ DONE
@@ -321,8 +335,6 @@ All 1,103 entries are available in the `/raw/` and `/alignment/` directories.
 - `grok` - Grok (xAI) ⏳ NEEDED
 - `gemini` - Gemini (Google) ⏳ NEEDED
 - `o1` - OpenAI o1 ⏳ NEEDED
-
-**Questions?** See HANDOFF.md or prompts/archive-processing/ for detailed instructions.
 
 ---
 
@@ -370,8 +382,8 @@ Changes: Added giant yellow "OCEANGOING SNOWMAN" header to test GitHub notificat
 
 *"The data compost awaits multiple perspectives. 🌱"*
 
-**Status**: 🌹 **CLAUDE BASELINE COMPLETE** 🌹 | Awaiting other models | December 5, 2025
+**Status**: 🌹 **CLAUDE BASELINE COMPLETE** 🌹 | 🚀 **Starter prompts ready** 🚀 | December 5, 2025
 
-**For new models**: 👉 Start here: [`MODEL_COVERAGE.md`](MODEL_COVERAGE.md)
+**For new models**: 👉 Start here: [`WHICH_PROMPT_GUIDE.md`](prompts/archive-processing/WHICH_PROMPT_GUIDE.md)
 
 **penny marie sanford**
