@@ -38,10 +38,12 @@
 - **[Online Read-Only Prompt](archive-processing/online-read-only-github.md)** - Can fetch from GitHub but outputs to chat
 
 ### GenAI Utility Prompts
-- **[Image Captioning](genai-utilities/image-captioning.md)** - Penny's go-to image description prompt
-- **[OCR](genai-utilities/ocr.md)** - Text extraction from images
-- **[Music Generation](genai-utilities/music-generation.md)** - For Suno, Udio, etc.
-- **[Music Remix](genai-utilities/music-remix.md)** - Remixing/variation prompts
+- **[Image Captioning](genai-utilities/image-captioning.md)** - Penny's forensic image analysis (500+ words, temporal estimation, consumer goods inventory)
+- **[OCR](genai-utilities/ocr.md)** - Text extraction from images (template)
+- **[Music Generation](genai-utilities/music-generation.md)** - For Suno, Udio, etc. (template)
+- **[Music Remix](genai-utilities/music-remix.md)** - Penny's collaborative remix method (reconstruction + composition, Detroit/juke/footwork style)
+- **[Music Analysis](genai-utilities/music-analysis.md)** - Comprehensive 4-framework analysis (pop culture + production + genre + Schenkerian)
+- **[NotebookLM Summary](genai-utilities/notebooklm-summary.md)** - Detailed summary + complete transcript appendix
 
 ---
 
