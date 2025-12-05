@@ -1,4 +1,4 @@
-<h1 style="color: #FFD700; font-size: 72px; text-align: center; text-shadow: 3px 3px 6px rgba(0,0,0,0.3);">⛵ OCEANGOING SNOWMAN ☃️</h1>
+<h1 style="color: #FFD700; font-size: 72px; text-align: center; text-shadow: 3px 3px 6px rgba(0,0,0,0.3);">| c i v i l i z a t i o n a l    c o n t e x t _|</h1>
 
 ---
 
