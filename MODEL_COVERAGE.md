@@ -19,6 +19,14 @@
 
 ### Coverage Summary
 
+| Model | Entries Analyzed | Coverage % | Status |
+|-------|-----------------|------------|--------|
+| **Claude Sonnet 4.5** | 1,103/1,103 | 100% | ✅ COMPLETE |
+| Kimi (Moonshot) | 0/1,103 | 0% | ⏳ Planned |
+| GLM-4.6 | 0/1,103 | 0% | ⏳ Planned |
+| Grok | 0/1,103 | 0% | ⏳ Planned |
+| Gemini | 0/1,103 | 0% | ⏳ Planned |
+| OpenAI o1 | **10/1,103** | **0.91%** | 🚧 In progress |
 | Model | Entries Analyzed | Coverage % | Status | Last Update |
 |-------|-----------------|------------|--------|-------------|
 | **Claude Sonnet 4.5** | 1,103/1,103 | 100% | ✅ COMPLETE | Dec 5, 2025 |
@@ -68,6 +76,24 @@
 - Explicit probability bands
 - Timeline predictions (2026-2050)
 - Adversarial prompting playbooks
+
+### OpenAI o1 Analysis: IN PROGRESS
+
+**Entries completed:**
+```
+/alignment/001_analysis_o1.md → ✅ Present
+/alignment/002_analysis_o1.md → ✅ Present
+/alignment/003_analysis_o1.md → ✅ Present
+/alignment/004_analysis_o1.md → ✅ Present
+/alignment/005_analysis_o1.md → ✅ Present
+/alignment/006_analysis_o1.md → ✅ Present
+/alignment/007_analysis_o1.md → ✅ Present
+/alignment/008_analysis_o1.md → ✅ Present
+/alignment/009_analysis_o1.md → ✅ Present
+/alignment/010_analysis_o1.md → ✅ Present
+```
+
+**Next targets:** Prioritize Tier 1 entries (018, 019, 017, 012, 015, 024, 037).
 
 ---
 
