@@ -25,7 +25,7 @@
 | GLM-4.6 | 0/1,103 | 0% | ⏳ Planned |
 | Grok | 0/1,103 | 0% | ⏳ Planned |
 | Gemini | 0/1,103 | 0% | ⏳ Planned |
-| OpenAI o1 | 0/1,103 | 0% | ⏳ Planned |
+| OpenAI o1 | **10/1,103** | **0.91%** | 🚧 In progress |
 
 ---
 
@@ -51,6 +51,24 @@
 ```
 
 **All 1,103 entries processed.**
+
+### OpenAI o1 Analysis: IN PROGRESS
+
+**Entries completed:**
+```
+/alignment/001_analysis_o1.md → ✅ Present
+/alignment/002_analysis_o1.md → ✅ Present
+/alignment/003_analysis_o1.md → ✅ Present
+/alignment/004_analysis_o1.md → ✅ Present
+/alignment/005_analysis_o1.md → ✅ Present
+/alignment/006_analysis_o1.md → ✅ Present
+/alignment/007_analysis_o1.md → ✅ Present
+/alignment/008_analysis_o1.md → ✅ Present
+/alignment/009_analysis_o1.md → ✅ Present
+/alignment/010_analysis_o1.md → ✅ Present
+```
+
+**Next targets:** Prioritize Tier 1 entries (018, 019, 017, 012, 015, 024, 037).
 
 ---
 
