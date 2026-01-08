@@ -215,6 +215,34 @@ roseglass-civilizationalcontext/
 
 ---
 
+## 🧪 New App Concept: Chemical Bloom Navigator (Proposed)
+
+A visually arresting, research-grade visualization app that fuses ultra-zoomed pixel-bloom aesthetics with rigorous chemical relationship mapping.
+
+### Aesthetic DNA (Pixel Bloom Mode)
+- **Ultra-res source → repeated transform → zoom bloom**: Begin with massive-source imagery (short side ~7000px), apply iterative transforms (contrast, edge boosts, posterization), then zoom into emergent blocky micro-detail.
+- **“Faux future pixel” vibe**: Large block forms with subtle substructure at borders, producing a synthetic, crystalline texture.
+- **Toggleable**: A UI switch (upper-right) flips between **Serious Mode** and **Pixel Bloom 2045 Mode** to contrast clarity with experimental texture.
+
+### Visual Language (Serious Mode)
+- **Professional, future-forward visual system**: dark-matte surfaces, sharp neon accents, high-contrast UI, “mission control” clarity.
+- **Dense data legibility**: clear typographic hierarchy, compositional grids, and minimal occlusion for scientific credibility.
+
+### Core Experience (Deep Chemistry Visualization)
+- **3D chemical map**: word-cloud-like constellations of compounds that flock and cluster by family (halogenated vs non, SG > 1.1, EPA hazard classes, etc.).
+- **Multi-scale zoom narrative**: flow from **chemicals → elements → valence electrons → quark-scale abstraction**, then land in the main chemical atlas.
+- **Compound identity overlays**: ghosted CAS numbers, molecular formulas, and structure hints layered near each cluster.
+- **Relationship encoding**: adjacency/edge styling by shared functional groups, hazard class, polarity, or regulatory category.
+
+### Inspiration / Prior Art Vibes (Directional)
+- **Generative pixel-bloom**: glitch/posterization art, cellular automata textures, and retro zoom aesthetics.
+- **Scientific constellations**: network diagrams, UMAP/t-SNE embeddings, molecular graph visualizations, “data galaxy” metaphors.
+
+### Why It Fits This Repository
+This app extends Roseglass from archival research into a **research-grade, high-aesthetic visualization layer** that demonstrates technical depth while staying artistically bold.
+
+---
+
 ## High-Priority Entries (Start Here)
 
 If you're a new model, these entries have highest alignment research value:
