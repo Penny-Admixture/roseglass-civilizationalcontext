@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operation Eyelash - Schema Refraction Scope</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <p class="eyebrow">Operation Eyelash</p>
+        <h1>Schema Refraction Scope</h1>
+        <p class="subhead">
+          Drop raw data into the beam. Watch the prism split it into candidate tables, patterns,
+          and collisions you can inspect.
+        </p>
+      </header>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Input Beam</h2>
+          <p>Paste anything: floorplans, RGB codes, emails, geometry, or freeform text.</p>
+        </div>
+        <textarea id="input" placeholder="Paste raw data here..."></textarea>
+        <div class="controls">
+          <button id="refract">Refract</button>
+          <button id="reset" class="ghost">Clear</button>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="panel">
+          <div class="panel-header">
+            <h2>Candidate Tables</h2>
+            <p>Heuristics and confidence scores for emergent structure.</p>
+          </div>
+          <div id="candidates" class="output"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <h2>Collision Debris</h2>
+            <p>Ambiguous tokens, overlaps, and competing interpretations.</p>
+          </div>
+          <div id="collisions" class="output"></div>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Schema Trace</h2>
+          <p>A plain-language log of what the scope thinks is happening.</p>
+        </div>
+        <ol id="trace" class="trace"></ol>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Prototype scope for exploratory schema refraction.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
