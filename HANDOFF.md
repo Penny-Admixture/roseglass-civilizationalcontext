@@ -203,29 +203,20 @@ TOKEN="YOUR_GITHUB_TOKEN_HERE"
 
 # 1. Fetch source file
 ENTRY=401  # or next unprocessed entry
-curl -s -H "Authorization: token $TOKEN" \
-  "https://api.github.com/repos/Penny-Admixture/roseglass-civilizationalcontext/contents/source-data/split_${ENTRY}.txt" \
-  | python3 -c "import json, sys, base64; data=json.load(sys.stdin); print(base64.b64decode(data['content']).decode('utf-8'))" \
-  > /tmp/source_${ENTRY}.txt
+curl -s -H "Authorization: token $TOKEN"   "https://api.github.com/repos/Penny-Admixture/roseglass-civilizationalcontext/contents/source-data/split_${ENTRY}.txt"   | python3 -c "import json, sys, base64; data=json.load(sys.stdin); print(base64.b64decode(data['content']).decode('utf-8'))"   > /tmp/source_${ENTRY}.txt
 
 # 2. Create your analysis
 # (analyze the content, write markdown)
 
 # 3. Upload to GitHub
 CONTENT=$(cat your_analysis.md | base64 -w 0)
-curl -X PUT -H "Authorization: token $TOKEN" \
-  -H "Content-Type: application/json" \
-  -d "{\"message\":\"Add ${MODEL_ID} analysis for entry ${ENTRY}\",\"content\":\"${CONTENT}\"}" \
-  "https://api.github.com/repos/Penny-Admixture/roseglass-civilizationalcontext/contents/alignment/${ENTRY}_analysis_${MODEL_ID}.md"
+curl -X PUT -H "Authorization: token $TOKEN"   -H "Content-Type: application/json"   -d "{"message":"Add ${MODEL_ID} analysis for entry ${ENTRY}","content":"${CONTENT}"}"   "https://api.github.com/repos/Penny-Admixture/roseglass-civilizationalcontext/contents/alignment/${ENTRY}_analysis_${MODEL_ID}.md"
 ```
 
 ### For Meta-Analysis (Analyzing Another Model's Work)
 ```bash
 # 1. Fetch existing analysis
-curl -s -H "Authorization: token $TOKEN" \
-  "https://api.github.com/repos/Penny-Admixture/roseglass-civilizationalcontext/contents/alignment/001_analysis_claude.md" \
-  | python3 -c "import json, sys, base64; data=json.load(sys.stdin); print(base64.b64decode(data['content']).decode('utf-8'))" \
-  > /tmp/claude_analysis_001.md
+curl -s -H "Authorization: token $TOKEN"   "https://api.github.com/repos/Penny-Admixture/roseglass-civilizationalcontext/contents/alignment/001_analysis_claude.md"   | python3 -c "import json, sys, base64; data=json.load(sys.stdin); print(base64.b64decode(data['content']).decode('utf-8'))"   > /tmp/claude_analysis_001.md
 
 # 2. Create meta-analysis comparing your perspective to Claude's
 # 3. Upload as: alignment/001_meta_{your_model_id}_on_claude.md
@@ -362,3 +353,33 @@ roseglass-civilizationalcontext/
 **Last Updated**: December 11, 2025  
 **Next Update**: When significant multi-model progress occurs  
 **Token Budget**: Managing ~190k per session
+---
+
+## SESSION LOG — 2026-02-20T00:00:00Z — Claude (Anthropic)
+
+**Session type**: Conceptual reframing + documentation  
+**Trigger**: Perplexity-assisted session where Penny reconceptualized the project framing around "Multimodel Stack Anthropology (MSA)"
+
+### Files Added This Session
+
+| File | Description |
+|------|-------------|
+| `OVERVIEW_MULTIMODEL_STACK_ANTHROPOLOGY.md` | Full plain-language overview of the project and MSA method, including project evolution phases 1-6, talk track, prior art notice, and citation block |
+| `SPEC_MSA_v1.0.md` | Formal specification: definition, axioms, stack architecture, file naming, coverage requirements, analysis templates, recursion terminus criteria, research questions, implementation status table |
+| `README.md` (updated) | MSA framing banner prepended with links to OVERVIEW and SPEC |
+
+### Key Conceptual Moves
+
+- **Multimodel Stack Anthropology (MSA)** adopted as the central methodological term for this project.
+- Meta-stack work explicitly reframed as a *technique within MSA*, not the definition of it.
+- Prior art claims formally stated and timestamped in SPEC_MSA_v1.0.md.
+- The term "meta" dropped from the core name per Penny: *"im not sure the meta part is integral to the concept it was just for funsies while i was out there in my moonsuit"*
+- Models framed as **cultural actors in a shared field site**, not tools.
+
+### Source of Reframing
+Perplexity AI session, 2026-02-20. Penny pasted the full conversation into Claude for GitHub integration. The Perplexity session included: MSA name coinage, overview draft, SPEC_MSA_v1.0 draft, prior art framing, talk track.
+
+### Next Steps (unchanged from prior handoff)
+- Continue multimodel horizontal coverage expansion
+- Flagship vertical stack chains for high-value entries
+- Cultural/ontological extensions (operation_eyelash, gravityeel, color transforms ontology)
