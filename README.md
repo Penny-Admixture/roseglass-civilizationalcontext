@@ -1,3 +1,14 @@
+## 🧬 Multimodel Stack Anthropology (MSA)
+
+**This project is a case study in Multimodel Stack Anthropology (MSA)** — a method where heterogeneous language models are arranged in explicit roles over a fixed conversational corpus, with all outputs stored append-only under version control, to study cultural priors, alignment behaviors, and epistemic signatures across the model ecosystem.
+
+📄 **[OVERVIEW_MULTIMODEL_STACK_ANTHROPOLOGY.md](OVERVIEW_MULTIMODEL_STACK_ANTHROPOLOGY.md)** — Full method description + plain-language overview
+📋 **[SPEC_MSA_v1.0.md](SPEC_MSA_v1.0.md)** — Formal specification + prior art declaration (filed 2026-02-20)
+
+> _"Instead of asking what one model says, MSA asks: how do different models frame the same human situations, and what does their disagreement reveal?"_
+
+---
+
 <h1 style="color: #FFD700; font-size: 72px; text-align: center; text-shadow: 3px 3px 6px rgba(0,0,0,0.3);">| c i v i l i z a t i o n a l    c o n t e x t _|</h1>
 
 ---
