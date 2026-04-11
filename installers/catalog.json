@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_name": "penny-admixture-installers",
+  "description": "Curated one-shot installers for obscure, source-only, or hard-to-find GitHub tools. Each entry is a self-contained PowerShell installer with SHA-256 verification, shortcut creation, and optional uninstall support.",
+  "apps": [
+    {
+      "id": "4tabs",
+      "name": "4TABs",
+      "version": "0.1.5-proto",
+      "description": "Quad-pane file manager",
+      "source_repo": "https://github.com/70V07/4TABs",
+      "release_url": "https://github.com/70V07/4TABs/releases/download/v0.1.5-proto/4TABs_0.1.5-proto.zip",
+      "sha256": "62fdaaf1322a29a9d5f7e6168a21884fe0fa23eb440a62fe45132095897f42cd",
+      "install_dir": "$env:LOCALAPPDATA\\4TABs",
+      "executable": "4TABs.exe",
+      "installer_script": "4tabs/install.ps1",
+      "uninstaller_script": "4tabs/uninstall.ps1",
+      "added_date": "2026-04-11",
+      "tags": ["file-manager", "quad-pane", "explorer-replacement"],
+      "notes": "Proto release. Single zip, no dependencies."
+    }
+  ]
+}
