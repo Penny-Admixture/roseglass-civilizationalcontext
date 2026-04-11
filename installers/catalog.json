@@ -16,8 +16,33 @@
       "installer_script": "4tabs/install.ps1",
       "uninstaller_script": "4tabs/uninstall.ps1",
       "added_date": "2026-04-11",
-      "tags": ["file-manager", "quad-pane", "explorer-replacement"],
+      "tags": [
+        "file-manager",
+        "quad-pane",
+        "explorer-replacement"
+      ],
       "notes": "Proto release. Single zip, no dependencies."
+    },
+    {
+      "id": "music-flamingo",
+      "name": "Music Flamingo",
+      "version": "preview-2026",
+      "description": "NVIDIA 8B-param AI for deep music understanding (genre, key, chords, tempo, structure, lyrics, mood)",
+      "source_repo": "https://github.com/NVIDIA/audio-flamingo",
+      "model_id": "nvidia/music-flamingo-hf",
+      "install_dir": "$env:LOCALAPPDATA\\MusicFlamingo",
+      "executable": "Launch-WebUI.bat",
+      "installer_script": "music-flamingo/install.ps1",
+      "uninstaller_script": "music-flamingo/uninstall.ps1",
+      "added_date": "2026-04-11",
+      "tags": [
+        "ai",
+        "music-analysis",
+        "audio-language-model",
+        "nvidia",
+        "huggingface"
+      ],
+      "notes": "Requires Python 3.10+ and NVIDIA GPU. Model weights (~16.6 GB) download on first launch."
     }
   ]
 }
