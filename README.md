@@ -37,6 +37,15 @@
 
 ---
 
+## 🟣 PERIWINKLE SUBSECTION: The Penny Protocol
+
+<div style="background: linear-gradient(135deg, #C3B1E1 0%, #B19CD9 100%); border: 3px solid #7E57C2; border-radius: 14px; padding: 18px; margin: 24px 0; box-shadow: 0 6px 14px rgba(81, 45, 168, 0.25);">
+<p style="margin: 0; color: #2D1B69; font-size: 20px;"><strong>NEW TOP-LEVEL DIRECTORY:</strong> <code>periwinkle/</code></p>
+<p style="margin: 10px 0 0 0; color: #2D1B69; font-weight: 600;">📜 Read the full manifesto here: <a href="periwinkle/THE_PENNY_PROTOCOL_UI_MANIFESTO_v0.3.0.md"><strong>The Penny Protocol: A User Interface Manifesto (v0.3.0)</strong></a></p>
+</div>
+
+---
+
 # 🌹 Roseglass Civilizational Context
 
 *Archive of 1103 GPT-4o (2024) Conversation Fragments for Alignment Research*
