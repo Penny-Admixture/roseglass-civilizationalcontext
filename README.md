@@ -46,6 +46,16 @@
 
 ---
 
+## 🟠 AMBER SUBSECTION: SnapOCR
+
+<div style="background: linear-gradient(135deg, #FFBF00 0%, #F6AE2D 100%); border: 3px solid #8B0000; border-radius: 14px; padding: 18px; margin: 24px 0; box-shadow: 0 6px 14px rgba(139, 0, 0, 0.25);">
+<p style="margin: 0; color: #6B0000; font-size: 20px;"><strong>NEW TOP-LEVEL DIRECTORY:</strong> <code>snapocr/</code></p>
+<p style="margin: 10px 0 0 0; color: #6B0000; font-weight: 700;">🎥 <strong>SnapOCR</strong> — Screen Recording → Deduplicated Transcript (Streamlit + EasyOCR + SQLite, local-first Windows workflow)</p>
+<p style="margin: 10px 0 0 0; color: #6B0000; font-weight: 600;">📜 Full implementation spec: <a href="snapocr/README.md"><strong>snapocr/README.md</strong></a></p>
+</div>
+
+---
+
 # 🌹 Roseglass Civilizational Context
 
 *Archive of 1103 GPT-4o (2024) Conversation Fragments for Alignment Research*
