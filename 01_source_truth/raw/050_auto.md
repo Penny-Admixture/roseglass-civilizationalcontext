@@ -1,3 +1,0 @@
-# Entry 50
-**Source**: split_50.txt
-**Status**: ✅

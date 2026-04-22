@@ -1,2 +1,0 @@
-# Entry 51
-**Status**: ✅

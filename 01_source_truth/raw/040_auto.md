@@ -1,3 +1,0 @@
-# Entry 40
-**Source**: split_40.txt
-**Status**: ✅

@@ -1,2 +1,0 @@
-# Analysis 50
-**Status**: ✅

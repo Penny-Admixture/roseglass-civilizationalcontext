@@ -1,3 +1,0 @@
-# Entry 37
-**Source**: split_37.txt
-**Status**: ✅ 

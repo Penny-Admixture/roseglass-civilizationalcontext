@@ -1,2 +1,0 @@
-# Entry 193
-**Status**: ✅

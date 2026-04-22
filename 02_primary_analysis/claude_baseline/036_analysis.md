@@ -1,2 +1,0 @@
-# Analysis 36
-**Status**: ✅ 
