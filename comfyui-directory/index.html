@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ComfyUI Local Workflow Directory</title>
+  <style>
+    body { font-family: Inter, system-ui, sans-serif; margin: 0; background: #0f1221; color: #eaf0ff; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    h1 { margin: 0 0 8px; }
+    .sub { opacity: .8; margin-bottom: 20px; }
+    .controls { display: grid; gap: 10px; grid-template-columns: 2fr 1fr 1fr 1fr; margin-bottom: 16px; }
+    input, select { padding: 10px; border-radius: 10px; border: 1px solid #2c365e; background: #171d35; color: #eaf0ff; }
+    .toggles { display: flex; gap: 16px; margin: 12px 0 20px; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 14px; }
+    .card { background: #171d35; border: 1px solid #2c365e; border-radius: 12px; overflow: hidden; }
+    .card img { width: 100%; height: 150px; object-fit: cover; background: #0b0f1f; }
+    .pad { padding: 12px; }
+    .meta { font-size: 12px; opacity: .8; display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0; }
+    .pill { border: 1px solid #4052a3; border-radius: 999px; padding: 2px 8px; }
+    .links { display: flex; gap: 12px; font-size: 14px; }
+    a { color: #8db4ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .count { margin: 8px 0 14px; font-size: 14px; opacity: .9; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>ComfyUI Workflow Directory (Local-Only)</h1>
+    <div class="sub">Use this local page to browse and filter workflows by modality and hardware constraints.</div>
+
+    <div class="controls">
+      <input id="q" placeholder="Search name, source, tag..." />
+      <select id="modality">
+        <option value="">All modalities</option>
+        <option>t2i</option><option>i2i</option><option>t2v</option><option>i2v</option>
+        <option>i2t</option><option>v2t</option><option>sound2text</option>
+      </select>
+      <select id="sort">
+        <option value="popularity">Sort: Popularity</option>
+        <option value="rating">Sort: Rating</option>
+        <option value="name">Sort: Name</option>
+      </select>
+      <select id="mode">
+        <option value="all">Show all modes</option>
+        <option value="local_ready">local_ready only</option>
+        <option value="hybrid">hybrid only</option>
+        <option value="cloud_only">cloud_only only</option>
+      </select>
+    </div>
+
+    <div class="toggles">
+      <label><input type="checkbox" id="vram" checked /> <= 12 GB VRAM</label>
+      <label><input type="checkbox" id="local" checked /> Local-only default</label>
+    </div>
+
+    <div class="count" id="count"></div>
+    <div class="card-grid" id="grid"></div>
+  </div>
+
+  <script>
+    const state = { data: [] };
+    const el = id => document.getElementById(id);
+
+    const controls = ["q", "modality", "sort", "mode", "vram", "local"];
+    controls.forEach(id => el(id).addEventListener("input", render));
+
+    function includeByFilters(w) {
+      const q = el("q").value.toLowerCase().trim();
+      const modality = el("modality").value;
+      const mode = el("mode").value;
+      const vramOnly = el("vram").checked;
+      const localOnly = el("local").checked;
+
+      if (q) {
+        const hay = `${w.name} ${w.source} ${w.category} ${(w.tags || []).join(" ")}`.toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      if (modality && w.modality !== modality) return false;
+      if (mode !== "all" && w.local_mode !== mode) return false;
+      if (vramOnly && (!(w.vram_recommended_gb <= 12) || !w.vram_verified)) return false;
+      if (localOnly && w.local_mode === "cloud_only") return false;
+      return true;
+    }
+
+    function sorter(a, b) {
+      const key = el("sort").value;
+      if (key === "name") return a.name.localeCompare(b.name);
+      return (b[key] || 0) - (a[key] || 0);
+    }
+
+    function card(w) {
+      return `
+        <article class="card">
+          <img src="${w.preview_image || ''}" alt="${w.name} preview" loading="lazy" />
+          <div class="pad">
+            <strong>${w.name}</strong>
+            <div class="meta">
+              <span class="pill">${w.modality}</span>
+              <span class="pill">${w.local_mode}</span>
+              <span class="pill">${w.vram_recommended_gb}GB rec</span>
+              <span class="pill">★ ${w.rating ?? "n/a"}</span>
+            </div>
+            <div class="meta">${w.source} · popularity ${w.popularity ?? "n/a"}</div>
+            <div class="links">
+              <a href="${w.workflow_url}" target="_blank" rel="noreferrer">Workflow</a>
+              <a href="${w.download_url}" target="_blank" rel="noreferrer">Download</a>
+            </div>
+          </div>
+        </article>`;
+    }
+
+    function render() {
+      const filtered = state.data.filter(includeByFilters).sort(sorter);
+      el("count").textContent = `${filtered.length} workflows shown`;
+      el("grid").innerHTML = filtered.map(card).join("");
+    }
+
+    fetch("./workflows.sample.json")
+      .then(r => r.json())
+      .then(data => { state.data = data; render(); })
+      .catch(() => {
+        el("count").textContent = "Failed to load data file (workflows.sample.json).";
+      });
+  </script>
+</body>
+</html>
