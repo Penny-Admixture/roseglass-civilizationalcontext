@@ -34,3 +34,13 @@ You can replace this file with your own exported list (same schema).
 
 - Records marked `cloud_only` are hidden by default.
 - Records with missing VRAM evidence should be marked `vram_verified: false`; these are hidden when `<=12 GB` is enabled.
+
+## Refresh with real links
+
+Run:
+
+```bash
+python3 comfyui-directory/build_dataset.py
+```
+
+This pulls real workflow JSON files from the public `comfyanonymous/ComfyUI_examples` repo and rewrites `workflows.sample.json` with downloadable URLs (no `example.com` placeholders).
