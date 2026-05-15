@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roseglass Multimodal Timeline</title>
+  <style>
+    body{font-family:Inter,system-ui,sans-serif;background:#0d1117;color:#e6edf3;margin:0}
+    .wrap{max-width:1200px;margin:0 auto;padding:20px}
+    .grid{display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:12px}
+    .panel{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:12px}
+    .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .asset,.cap{padding:8px;border:1px solid #30363d;border-radius:8px;margin:6px 0;background:#0f141b}
+    .timeline-strip{display:flex;gap:4px;overflow:auto;padding-bottom:6px}
+    .frame{width:56px;height:56px;border-radius:6px;background:#1f2937;border:1px solid #374151;display:flex;align-items:center;justify-content:center;font-size:12px}
+    button{background:#238636;color:white;border:0;border-radius:8px;padding:8px 10px;cursor:pointer}
+    input,select{background:#0f141b;border:1px solid #30363d;color:#e6edf3;padding:7px;border-radius:7px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Multimodal Core UI (Prototype)</h1>
+  <p>Video = ordered frame sequence + one primary audio track (silent allowed).</p>
+  <div class="row">
+    <label>FPS <input id="fps" type="number" value="24" min="1"/></label>
+    <label>Duration (ms) <input id="duration" type="number" value="5000" min="0"/></label>
+    <button id="sync">Recompute Duration</button>
+  </div>
+  <div class="grid" style="margin-top:12px">
+    <section class="panel"><h3>Assets</h3><div id="assets"></div></section>
+    <section class="panel"><h3>Timeline</h3><div id="frames" class="timeline-strip"></div><div id="audio"></div></section>
+    <section class="panel"><h3>Captions</h3><div id="caps"></div></section>
+  </div>
+</div>
+<script>
+const state={
+  images:[{id:1001,name:'img_1001'},{id:1002,name:'img_1002'},{id:1003,name:'img_1003'}],
+  audios:[{id:551,name:'music_loop_A',duration_ms:5000,role:'program'},{id:552,name:'silence_5s',duration_ms:5000,role:'silent'}],
+  timeline:{fps:24,duration_ms:5000,frames:[{frame_index:0,image_id:1001,start_ms:0,duration_ms:42}],audio_tracks:[{audio_id:551,is_primary:true,offset_ms:0}]},
+  captions:[{start_ms:0,end_ms:1200,source:'fusion',text:'Warm synth swell under abstract cyan frame.'}]
+};
+const q=id=>document.getElementById(id);
+function render(){
+  q('assets').innerHTML=[...state.images.map(i=>`<div class='asset'>🖼️ #${i.id} ${i.name} <button onclick='addFrame(${i.id})'>Add Frame</button></div>`),...state.audios.map(a=>`<div class='asset'>🎵 #${a.id} ${a.name} <button onclick='setPrimaryAudio(${a.id})'>Set Primary</button></div>`)].join('');
+  q('frames').innerHTML=state.timeline.frames.sort((a,b)=>a.frame_index-b.frame_index).map(f=>`<div class='frame'>${f.frame_index}<br/>#${f.image_id}</div>`).join('');
+  const primary=state.timeline.audio_tracks.find(a=>a.is_primary);
+  q('audio').innerHTML=primary?`<div class='asset'>Primary audio: #${primary.audio_id} offset ${primary.offset_ms}ms</div>`:'<div class="asset">No primary audio</div>';
+  q('caps').innerHTML=state.captions.map(c=>`<div class='cap'>[${c.start_ms}-${c.end_ms}] <b>${c.source}</b><br/>${c.text}</div>`).join('');
+  q('fps').value=state.timeline.fps; q('duration').value=state.timeline.duration_ms;
+}
+function addFrame(imageId){
+  const fi=state.timeline.frames.length;
+  state.timeline.frames.push({frame_index:fi,image_id:imageId,start_ms:fi*42,duration_ms:42});
+  render();
+}
+function setPrimaryAudio(audioId){ state.timeline.audio_tracks=[{audio_id:audioId,is_primary:true,offset_ms:0}]; render(); }
+q('sync').addEventListener('click',()=>{
+  state.timeline.fps=Number(q('fps').value)||24;
+  const frameEnd=Math.max(0,...state.timeline.frames.map(f=>f.start_ms+f.duration_ms));
+  const pa=state.timeline.audio_tracks.find(a=>a.is_primary);
+  const audio=state.audios.find(x=>x.id===pa?.audio_id);
+  const audioEnd=(pa?.offset_ms||0)+(audio?.duration_ms||0);
+  state.timeline.duration_ms=Math.max(frameEnd,audioEnd,Number(q('duration').value)||0);
+  render();
+});
+render();
+</script>
+</body>
+</html>
