@@ -1,0 +1,26 @@
+{
+  "app": {
+    "id": "4tabs",
+    "name": "4TABs",
+    "description": "Quad-pane file manager with tabbed navigation",
+    "source_repo": "https://github.com/70V07/4TABs",
+    "license": "unknown",
+    "tags": ["file-manager", "quad-pane", "explorer-replacement", "tabbed"],
+    "category": "file-management"
+  },
+  "current_version": "0.1.5-proto",
+  "install_target": "$env:LOCALAPPDATA\\4TABs",
+  "executable": "4TABs.exe",
+  "requires_admin": false,
+  "dependencies": [],
+  "versions": [
+    {
+      "version": "0.1.5-proto",
+      "release_date": "2026-04-11",
+      "added_to_catalog": "2026-04-11",
+      "download_url": "https://github.com/70V07/4TABs/releases/download/v0.1.5-proto/4TABs_0.1.5-proto.zip",
+      "sha256": "62fdaaf1322a29a9d5f7e6168a21884fe0fa23eb440a62fe45132095897f42cd",
+      "notes": "Initial proto release. First entry in the installer catalog."
+    }
+  ]
+}
