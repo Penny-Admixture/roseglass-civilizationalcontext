@@ -1,0 +1,27 @@
+{
+  "app": {
+    "id": "music-flamingo",
+    "name": "Music Flamingo",
+    "description": "NVIDIA's 8B-parameter AI model for deep music understanding — genre, key, chord, tempo, structure, lyrics, mood analysis",
+    "source_repo": "https://github.com/NVIDIA/audio-flamingo",
+    "license": "NVIDIA OneWay Noncommercial",
+    "tags": ["ai", "music-analysis", "audio-language-model", "nvidia", "huggingface", "transformers"],
+    "category": "ai-music"
+  },
+  "current_version": "preview-2026",
+  "install_target": "$env:LOCALAPPDATA\\MusicFlamingo",
+  "executable": "Launch-WebUI.bat",
+  "requires_admin": false,
+  "dependencies": ["Python 3.10+", "NVIDIA GPU with CUDA drivers"],
+  "versions": [
+    {
+      "version": "preview-2026",
+      "release_date": "2026-04-11",
+      "added_to_catalog": "2026-04-11",
+      "model_id": "nvidia/music-flamingo-hf",
+      "model_size_gb": 16.6,
+      "huggingface_url": "https://huggingface.co/nvidia/music-flamingo-hf",
+      "notes": "Preview release. Model weights download from HuggingFace on first run. Auto-selects fp16/8bit/4bit based on GPU VRAM."
+    }
+  ]
+}
